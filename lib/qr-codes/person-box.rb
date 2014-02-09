@@ -20,7 +20,7 @@ class PersonBox
       qr_code
     end
 
-    print '.'
+    # print '.'
   end
 
   private
@@ -43,12 +43,16 @@ class PersonBox
   end
 
   def texts
+    p person.name
     d.fill_color [100, 65, 25, 0]
+    d.font document.bold_font
     d.text_box person.name, align: :center, size: 18,
       at: [1.cm,8.cm], width: WIDTH - 2.cm
-    d.text_box person.organization, align: :center, size: 14,
+
+    d.font document.regular_font
+    d.text_box person.organization, align: :center, size: 12,
       at: [1.cm,7.cm], width: WIDTH - 2.cm
-    d.text_box person.city, align: :center, size: 14,
+    d.text_box person.city, align: :center, size: 12,
       at: [1.cm,6.3.cm], width: WIDTH - 2.cm
   end
 
@@ -58,8 +62,12 @@ class PersonBox
       at: [0.5.cm,4.5.cm], width: WIDTH - QrCode::WIDTH - 1.cm,
       height: QrCode::HEIGHT + 10
 
-    d.image QrFile.new(person.data).file.path,
-      at: [WIDTH - QrCode::WIDTH - 10, QrCode::HEIGHT + 10 + 1.cm]
+    if person.qr?
+      # p person.data.length
+      p person.data.bytesize
+      d.image QrFile.new(person.data).file.path,
+        at: [WIDTH - QrCode::WIDTH - 10, QrCode::HEIGHT + 10 + 1.cm]
+    end
   end
 
   def invert(zero_or_one)
