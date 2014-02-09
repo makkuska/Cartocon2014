@@ -1,7 +1,13 @@
+require 'unicode_utils/upcase'
+
 Person = Struct.new(:firstname, :lastname, :organization, :city,
                     :email, :phone, :topic, :qr) do
   def name
     [firstname,lastname].join(' ')
+  end
+
+  def cap_name
+    [firstname,UnicodeUtils.upcase(lastname)].join(' ')
   end
 
   def qr?

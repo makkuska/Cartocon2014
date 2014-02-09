@@ -16,9 +16,11 @@ GEM
       ttfunk (~> 1.0.3)
     ruby-rc4 (0.1.5)
     ttfunk (1.0.3)
+    unicode_utils (1.4.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   prawn
+  unicode_utils

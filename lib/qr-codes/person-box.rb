@@ -46,7 +46,7 @@ class PersonBox
     p person.name
     d.fill_color [100, 65, 25, 0]
     d.font document.bold_font
-    d.text_box person.name, align: :center, size: 18,
+    d.text_box person.cap_name, align: :center, size: 18,
       at: [1.cm,8.cm], width: WIDTH - 2.cm
 
     d.font document.regular_font
