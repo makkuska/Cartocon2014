@@ -4,11 +4,11 @@ require_relative 'people'
 require_relative 'person-box'
 
 class Document
-  attr_reader :people, :regular_font, :bold_font, :logo, :logo2, :background
+  attr_reader :people, :regular_font, :bold_font, :background
 
-  def initialize(people, regular_font, bold_font, logo, logo2, background)
-    @people, @regular_font, @bold_font, @logo, @logo2, @background =
-      people, regular_font, bold_font, logo, logo2, background
+  def initialize(people, regular_font, bold_font, background)
+    @people, @regular_font, @bold_font, @background =
+      people, regular_font, bold_font, background
   end
 
   def self.from_csv(file, *args)
