@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Document	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/document.rb	/^class Document$/;"	c
+HEIGHT	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person-box.rb	/^  HEIGHT = 12.5.cm$/;"	c
+HEIGHT	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/qr-code.rb	/^  HEIGHT = 100$/;"	c
+HOST	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/qr-code.rb	/^  HOST = 'chart.apis.google.com'$/;"	c
+PATH	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/qr-code.rb	/^  PATH = '\/chart'$/;"	c
+PROTOCOL	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/qr-code.rb	/^  PROTOCOL = 'http:\/\/'$/;"	c
+People	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/people.rb	/^class People$/;"	c
+Person	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person.rb	/^Person = Struct.new(:firstname, :lastname, :organization, :city,$/;"	c
+PersonBox	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person-box.rb	/^class PersonBox$/;"	c
+QrCode	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/qr-code.rb	/^class QrCode$/;"	c
+QrFile	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/qr-file.rb	/^class QrFile$/;"	c
+TYPE	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/qr-code.rb	/^  TYPE = 'qr'$/;"	c
+WIDTH	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person-box.rb	/^  WIDTH = 8.2.cm$/;"	c
+WIDTH	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/qr-code.rb	/^  WIDTH = 100$/;"	c
+cap_name	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person.rb	/^  def cap_name$/;"	f
+d	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person-box.rb	/^  def d$/;"	f	class:PersonBox
+data	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person.rb	/^  def data$/;"	f
+document	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/document.rb	/^  def document$/;"	f	class:Document
+draw	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person-box.rb	/^  def draw(row,col)$/;"	f	class:PersonBox
+file	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/qr-file.rb	/^  def file$/;"	f	class:QrFile
+from_csv	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/document.rb	/^  def self.from_csv(file, *args)$/;"	F	class:Document
+from_csv	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/people.rb	/^  def self.from_csv(file)$/;"	F	class:People
+generate	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/document.rb	/^  def generate(pdffile)$/;"	f	class:Document
+get	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/qr-code.rb	/^  def get$/;"	f	class:QrCode
+images	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person-box.rb	/^  def images$/;"	f	class:PersonBox
+initialize	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/document.rb	/^  def initialize(people, regular_font, bold_font, background)$/;"	f	class:Document
+initialize	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person-box.rb	/^  def initialize(person,document)$/;"	f	class:PersonBox
+initialize	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/qr-code.rb	/^  def initialize(data)$/;"	f	class:QrCode
+initialize	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/qr-file.rb	/^  def initialize(data)$/;"	f	class:QrFile
+invert	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person-box.rb	/^  def invert(zero_or_one)$/;"	f	class:PersonBox
+name	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person.rb	/^  def name$/;"	f
+params	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/qr-code.rb	/^  def params$/;"	f	class:QrCode
+qr?	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person.rb	/^  def qr?$/;"	f
+qr_code	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person-box.rb	/^  def qr_code$/;"	f	class:PersonBox
+render	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/document.rb	/^  def render$/;"	f	class:Document
+texts	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person-box.rb	/^  def texts$/;"	f	class:PersonBox
+top_left	/home/jakub/Dropbox/Projects/ruby/qr-codes/lib/qr-codes/person-box.rb	/^  def top_left(row, col)$/;"	f	class:PersonBox
