@@ -31,7 +31,7 @@ class PersonBox
   end
 
   def top_left(row, col)
-    [col * WIDTH, (1 + invert(row)) * HEIGHT]
+    [col * WIDTH + 1.cm, (1 + invert(row)) * HEIGHT + 1.cm]
   end
 
   def background
