@@ -5,8 +5,8 @@ class QrCode
   HOST = 'chart.apis.google.com'
   PATH = '/chart'
   TYPE = 'qr'
-  WIDTH = 110
-  HEIGHT = 110
+  WIDTH = 107
+  HEIGHT = 107
 
   def initialize(data)
     @data = data

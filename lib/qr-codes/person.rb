@@ -1,6 +1,6 @@
 require 'unicode_utils/upcase'
 
-Person = Struct.new(:firstname, :lastname, :email, :organization, :city, :state,
+Person = Struct.new(:firstname, :lastname, :email, :organization, :org_short, :city, :state,
                     :topic, :qr, :phone, :type) do
   def name
     [firstname,lastname].join(' ')
@@ -11,7 +11,7 @@ Person = Struct.new(:firstname, :lastname, :email, :organization, :city, :state,
   end
 
   def qr?
-    qr == 'ano'
+    qr == 'ano' || qr == 'yes'
   end
 
   def data
@@ -22,7 +22,7 @@ N:#{lastname};#{firstname}
 FN:#{name}
 EMAIL:#{email}
 TEL:#{phone}
-ORG:#{organization}
+ORG:#{org_short}
 END:VCARD
 """
   end

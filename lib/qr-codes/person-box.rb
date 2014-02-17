@@ -56,7 +56,7 @@ class PersonBox
 
   def qr_code
     d.fill_color [100, 60, 25, 0]
-    d.text_box person.topic.gsub('\\', "\n"), size: 12, valign: :center,
+    d.text_box person.topic.to_s.gsub('\\', "\n"), size: 12, valign: :center,
       # at: [0.7.cm,4.2.cm],
       at: [0.7.cm,QrCode::HEIGHT + 1.cm - 10],
       width: WIDTH - (person.qr? ? QrCode::WIDTH : 0) - 1.6.cm,
