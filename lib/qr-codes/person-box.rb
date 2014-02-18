@@ -48,7 +48,7 @@ class PersonBox
 
     d.fill_color [0, 0, 0, 70]
     d.font document.regular_font
-    d.text_box person.organization, size: 12,
+    d.text_box person.organization.to_s, size: 12,
       at: [0.7.cm,6.7.cm], width: WIDTH - 1.6.cm
     d.text_box [person.city,person.state].join(', '), size: 12,
       at: [0.7.cm,6.2.cm], width: WIDTH - 1.6.cm
