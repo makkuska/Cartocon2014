@@ -14,9 +14,13 @@ class PersonBox
   def draw(row,col)
     p person
     d.bounding_box(top_left(row,col), width: WIDTH, height: HEIGHT) do
-      d.line_width = 0.25
-      d.stroke_bounds
+      d.line_width = 0.15
+      d.stroke_color "606060"
+      #d.stroke_bounds
+      d.dash([5, 20])
       background
+      d.stroke_line([WIDTH,0],[WIDTH, HEIGHT]) if col == 0
+      # d.stroke_line([0,0],[0, HEIGHT]) if col == 0 
       texts
       qr_code
     end
