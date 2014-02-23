@@ -19,7 +19,10 @@ class PersonBox
       #d.stroke_bounds
       d.dash([5, 20])
       background
-      d.stroke_line([WIDTH,0],[WIDTH, HEIGHT]) if col == 0
+      d.stroke_line([WIDTH,-30],[WIDTH, -10]) if col == 0 and row == 1 
+      d.stroke_line([WIDTH,HEIGHT+30],[WIDTH,HEIGHT+10]) if col == 0 and row == 0 
+      d.stroke_line([-30, 0],[-10, 0]) if col == 0 and row == 0 
+      d.stroke_line([WIDTH+30, 0],[WIDTH+10, 0]) if col == 1 and row == 0 
       # d.stroke_line([0,0],[0, HEIGHT]) if col == 0 
       texts
       qr_code
@@ -45,7 +48,7 @@ class PersonBox
   def texts
     d.fill_color [100, 60, 25, 0]
     d.font document.bold_font
-    d.text_box person.firstname, size: 30,
+    d.text_box person.firstname.to_s, size: 30,
       at: [0.7.cm,9.1.cm], width: WIDTH - 1.6.cm
     d.text_box person.cap_lastname, size: 24,
       at: [0.7.cm,8.cm], width: WIDTH - 1.6.cm
@@ -62,7 +65,7 @@ class PersonBox
     d.fill_color [100, 60, 25, 0]
     d.text_box person.topic.to_s.gsub('\\', "\n"), size: 12, valign: :center,
       # at: [0.7.cm,4.2.cm],
-      at: [0.7.cm,QrCode::HEIGHT + 1.cm - 10],
+      at: [0.7.cm,QrCode::HEIGHT + 1.4.cm - 10],
       width: WIDTH - (person.qr? ? QrCode::WIDTH : 0) - 1.6.cm,
       height: QrCode::HEIGHT - 20
 
@@ -70,7 +73,7 @@ class PersonBox
       # p person.data.length
       p person.data.bytesize
       d.image QrFile.new(person.data).file.path,
-        at: [WIDTH - QrCode::WIDTH - 10, QrCode::HEIGHT + 10 + 1.cm]
+        at: [WIDTH - QrCode::WIDTH - 10, QrCode::HEIGHT + 10 + 1.084.cm]
     end
   end
 
